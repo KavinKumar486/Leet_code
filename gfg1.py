@@ -1,9 +1,5 @@
 from collections import defaultdict
-class Solution:
-    
-    
-    
-    
+class Solution:    
 
     def topoSort(self, V, edges):
         visited = [0]*V
