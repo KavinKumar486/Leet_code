@@ -1,20 +1,22 @@
-'''def g(strs):
-    pt1 =0
-    pt2 = float('inf')
-    i=0
-    while i<len(strs):
-        for j in range (len(strs)):
-            if strs[i][j]:
-                pt1+=1
-                
-            else: 
-                break
-    
-        i+=1
-        pt2= min(pt1,pt2)
-        pt1=0
-    
-    return(strs[0][:pt2])
-a=g(['flowei','flower'])
-print(a)
-'''
+s='aaaabbb'
+l=0
+r=len(s)-1
+res=0
+while l<r:
+    if s[l] == s[r]:
+        r-=1
+        l+=1
+    else:
+        res+=1
+        l+=1
+res1= 0
+l=0
+r=len(s)-1
+while l<r:
+    if s[l] == s[r]:
+        r-=1
+        l+=1
+    else:
+        res1+=1
+        r-=1
+print(min(res,res1))
